@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import { MovieService } from 'src/app/service/movie.service';
 import { Movie } from 'src/app/models/movie';
 import { ActivatedRoute } from '@angular/router';
 import { Providers } from 'src/app/models/providers';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-landing-page',
@@ -21,12 +22,21 @@ export class LandingPageComponent implements OnInit {
   currentIndex = -1;
   title = '';
 
-  constructor(private movieService: MovieService, private route: ActivatedRoute) { 
+  pageYoffset = 0;
+  
+  @HostListener('window:scroll', ['$event']) onScroll(event: any){
+    this.pageYoffset = window.pageYOffset;
+  }
+
+  constructor(private movieService: MovieService, private route: ActivatedRoute,private scroll: ViewportScroller) { 
 
   }
 
   ngOnInit(): void {
     this.getMovies();
+  }
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
   }
 
   getMovies() {
@@ -58,6 +68,8 @@ export class LandingPageComponent implements OnInit {
       //   console.log(this.searchMovies);
       // },
       // error: (e) => console.error(e)
+
+      
     });
   }
 }
