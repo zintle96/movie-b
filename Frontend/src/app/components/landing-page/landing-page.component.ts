@@ -15,7 +15,6 @@ export class LandingPageComponent implements OnInit {
   currentMovie: Movie = {};
 
   searchMovies: any = [];
-  search: Movie = {};
   isSearchMovie: boolean = true;
 
   currentIndex = -1;
