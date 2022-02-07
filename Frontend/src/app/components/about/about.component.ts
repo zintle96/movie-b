@@ -1,9 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit ,HostListener} from '@angular/core';
 import { Movie } from 'src/app/models/movie';
 import { MovieService } from 'src/app/service/movie.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Cast } from 'src/app/models/cast';
 import { Providers } from 'src/app/models/providers';
+import { ViewportScroller } from '@angular/common';
+
 
 @Component({
   selector: 'app-about',
@@ -34,6 +36,8 @@ export class AboutComponent implements OnInit {
 
   providerMovie: any = [];
   movieProvider: Providers = {};
+
+  pageYoffset = 0;
 
   "genres":[
     {
@@ -129,7 +133,7 @@ export class AboutComponent implements OnInit {
   }
 
   constructor(
-    private route: ActivatedRoute, private movieService: MovieService
+    private route: ActivatedRoute, private movieService: MovieService,private scroll: ViewportScroller
   ) { }
 
   ngOnInit(): void {
@@ -138,6 +142,9 @@ export class AboutComponent implements OnInit {
     this.getProvider(this.route.snapshot.params["id"]);
   }
 
+  scrollToTop(){
+   this.scroll.scrollToPosition([0,0]);
+ }
 
   getOneMovie(id: any){
     this.movieService.getOneMovie(id).subscribe((data: any)=>{

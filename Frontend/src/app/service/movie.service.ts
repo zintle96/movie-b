@@ -8,6 +8,8 @@ const movieUrl = "https://api.themoviedb.org/3/movie"
 const movieID =`?api_key=b47305b354135433a8512ad26ed78b50&language=en-US`;
 const search = `https://api.themoviedb.org/3/search/movie?api_key=b47305b354135433a8512ad26ed78b50&query=`;
 
+
+
 const watch = "watch/providers?api_key=b47305b354135433a8512ad26ed78b50";
 
 @Injectable({

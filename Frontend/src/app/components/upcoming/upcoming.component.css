@@ -1,6 +1,13 @@
-.navbar-toggler{
+  .navbar-toggler{
     background-color: rgba(182, 69, 69, 0.726);
   }
   .nav-item a:hover {
     color: rgba(182, 69, 69, 0.726);
+  }
+  .scroll-to-top{
+    position: fixed;
+    background:wheat;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
   }

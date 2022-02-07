@@ -60,13 +60,21 @@
           <div>
               <img src="https://image.tmdb.org/t/p/original/{{actor.profile_path}}" class="card-img-top" alt="...">
           </div>
+          <button (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0" >
+    scrollToTop 
+  </button>
           <br>
           <div class="card-body">
           <h5 class="card-title">{{actor.name}}</h5>
-          <p class="card-text text-success">{{actor.character}}</p>
+          <p class="card-text text-success">{{actor.character}}</p> 
+          
           </div>
+          
       </div>
+      
       </div>
-  </div>
+ 
+</div>
 
 
+  

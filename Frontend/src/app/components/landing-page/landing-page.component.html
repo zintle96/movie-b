@@ -74,7 +74,7 @@
 </div>
 
 <section class="grid p-5" *ngIf="isSearchMovie">
-  <h1 class="text-center" style="font-size: 30px; color: silver;">Upcoming Movies</h1>
+  <h1 class="text-center" style="font-size: 30px; color: silver;">Latest Movies</h1>
   <div class="container mt-5">
           <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col" *ngFor="let latest of latestMovies; index as i" [class.active]="i == currentIndex" (click)="setActive(latest,i)">
@@ -89,11 +89,10 @@
     </div>
 </section>
 
-<button (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0" >
+<button (click)="scrollToTop()" class="scroll-to-top" style="background: fa-arrow-up; " *ngIf="pageYoffset > 0" >
   scrollToTop 
 </button>
 
-<!-- <a href="#" class="back-to-top" style="color: white;"><i class="lni-chevron-up"></i></a> -->
 <footer class="bg-dark p-3">
 <div class="footer" >
     <div class="footer-body">
