@@ -15,7 +15,6 @@ export class LandingPageComponent implements OnInit {
   currentMovie: Movie = {};
 
   searchMovies: any = [];
-  search: Movie = {};
   isSearchMovie: boolean = true;
 
   currentIndex = -1;
@@ -33,7 +32,6 @@ export class LandingPageComponent implements OnInit {
     this.movieService.getMovies().subscribe(
     (data: any) => {
       this.latestMovies = data.results;
-      //console.log(data.results);
     });
   }
 
