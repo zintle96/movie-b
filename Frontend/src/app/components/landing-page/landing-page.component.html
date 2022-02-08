@@ -54,6 +54,7 @@
   </form>
 </div>
 <hr style="color: aliceblue;"> 
+<<<<<<< HEAD
 
 <div class="container" *ngIf="!isSearchMovie">
   <h1 class="text-center" style="font-size: 30px; color: silver;" > Results </h1>
@@ -72,6 +73,24 @@
 </div>
 
 <br><br><br><br>
+=======
+
+<div class="container" *ngIf="!isSearchMovie">
+  <h1 class="text-center" style="font-size: 30px; color: silver;" > Results </h1>
+  <div class="container mt-5">
+          <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col" *ngFor="let search of searchMovies; index as i" [class.active]="i == currentIndex" (click)="setActive(search,i)">
+              <div class="card">
+                <img routerLink="/about/{{search.id}}" src="http://image.tmdb.org/t/p/w500/{{ search.poster_path }}" class="card-img-top" routerLink="models" >
+                <div class="card-body">
+                  <h5 class="card-title">{{search.original_title}}</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+>>>>>>> b0c6b87166b63014ce01a31d530669aa967a6024
 
 <section class="grid p-5" *ngIf="isSearchMovie">
   <h1 class="text-center" style="font-size: 30px; color: silver;">Upcoming Movies</h1>

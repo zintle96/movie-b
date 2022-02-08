@@ -2757,7 +2757,11 @@
     "signal-exit" "^3.0.3"
     "strip-final-newline" "^2.0.0"
 
+<<<<<<< HEAD
 "express@^4.17.1", "express@^4.17.2":
+=======
+"express@^4.17.1":
+>>>>>>> b0c6b87166b63014ce01a31d530669aa967a6024
   "integrity" "sha512-oxlxJxcQlYwqPWKVJJtvQiwHgosH/LrLSPA+H4UxpyvSS6jC5aH+5MoHFM+KABgTOt0APue4w66Ha8jCUo9QGg=="
   "resolved" "https://registry.npmjs.org/express/-/express-4.17.2.tgz"
   "version" "4.17.2"
@@ -4517,6 +4521,7 @@
   "resolved" "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   "version" "4.0.0"
 
+<<<<<<< HEAD
 "path@^0.12.7":
   "integrity" "sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8="
   "resolved" "https://registry.npmjs.org/path/-/path-0.12.7.tgz"
@@ -4525,6 +4530,8 @@
     "process" "^0.11.1"
     "util" "^0.10.3"
 
+=======
+>>>>>>> b0c6b87166b63014ce01a31d530669aa967a6024
 "picocolors@^0.2.1":
   "integrity" "sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA=="
   "resolved" "https://registry.npmjs.org/picocolors/-/picocolors-0.2.1.tgz"
@@ -5004,11 +5011,14 @@
   "resolved" "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
   "version" "2.0.1"
 
+<<<<<<< HEAD
 "process@^0.11.1":
   "integrity" "sha1-czIwDoQBYb2j5podHZGn1LwW8YI="
   "resolved" "https://registry.npmjs.org/process/-/process-0.11.10.tgz"
   "version" "0.11.10"
 
+=======
+>>>>>>> b0c6b87166b63014ce01a31d530669aa967a6024
 "promise-inflight@^1.0.1":
   "integrity" "sha1-mEcocL8igTL8vdhoEputEsPAKeM="
   "resolved" "https://registry.npmjs.org/promise-inflight/-/promise-inflight-1.0.1.tgz"
@@ -5989,6 +5999,7 @@
   "resolved" "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   "version" "1.0.2"
 
+<<<<<<< HEAD
 "util@^0.10.3":
   "integrity" "sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A=="
   "resolved" "https://registry.npmjs.org/util/-/util-0.10.4.tgz"
@@ -5996,6 +6007,8 @@
   dependencies:
     "inherits" "2.0.3"
 
+=======
+>>>>>>> b0c6b87166b63014ce01a31d530669aa967a6024
 "utils-merge@1.0.1":
   "integrity" "sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM="
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
