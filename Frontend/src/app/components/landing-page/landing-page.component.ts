@@ -15,7 +15,6 @@ export class LandingPageComponent implements OnInit {
   currentMovie: Movie = {};
 
   searchMovies: any = [];
-  search: Movie = {};
   isSearchMovie: boolean = true;
 
   currentIndex = -1;
@@ -53,11 +52,6 @@ export class LandingPageComponent implements OnInit {
         this.isSearchMovie = false;
       }
       console.log(this.searchMovies);
-      // next: (data) => {
-      //   this.searchMovies = data.search;
-      //   console.log(this.searchMovies);
-      // },
-      // error: (e) => console.error(e)
     });
   }
 }
